@@ -1,0 +1,289 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.flex-c-c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    color: rgb(255, 0, 123);
+    font-weight: bold;
+    font-size: larger;
+}
+body{
+    padding: 0 5vw;
+}
+header{
+    height: 80px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.087);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    border-radius: 20px;
+}
+header .main-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .main-menu ul li{
+    list-style: none;
+    margin: 0px 10px;
+}
+.login-group{
+    display: flex;
+}
+
+.login-group div{
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-group div span{
+    padding: 5px;
+    color: rgb(255, 0, 123);
+}
+.search{
+    position: relative;
+}
+.search input{
+    height:37px;
+    width: 350px;
+    padding: 0px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.041);
+    outline: none;
+
+}
+.search span{
+    position: absolute;
+    right: 15px;
+    color: rgba(0, 0, 0, 0.811);
+    top: 5px;
+    color: rgb(255, 0, 123);
+}
+
+
+.search input::-webkit-input-placeholder{
+    color: rgba(0, 0, 0, 0.489);
+    font-weight: 500;
+}
+
+/* section 1 ------------------------------------------------------- */
+
+.section{
+    min-height: calc(100vh - 80px);
+
+}
+
+.section .feature-post{
+    margin: 20px 0;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 181, 211, 0.208);
+    padding: 10px 25px;
+}
+.section .feature-post .feature-left{
+    width: calc(100vw - 5vw - 50vw);
+}
+.section .feature-post .feature-left h1{
+    font-size: 45px;
+    
+}
+.section .feature-post .feature-left button{
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(255, 0, 123);
+    color: white;
+}
+.section .feature-post .feature-right{
+    width: calc(100vw - 5vw - 50vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section .feature-post .feature-right img{
+    height: 40vh;
+}
+
+.post-card{
+    scale: 0.95;
+    width: 350px;
+    position: relative;
+    box-shadow: 0 0 100px rgba(255, 0, 123, 0.066);
+    border-radius: 20px;
+    margin: 10px;
+    transition: all 0.2s;
+}
+.post-card:hover{
+    scale: 0.98;
+}
+
+
+.post-card .post-card-info{
+    padding: 10px 20px;
+    position: relative;
+}
+
+.post-card .post-card-info h3{
+    margin: 5px 0px;
+}
+.post-card .post-card-info p{
+    margin: 3px 0px;
+}
+.post-card .post-card-info button{
+    cursor: pointer;
+    margin: 20px 0px;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: rgb(255, 0, 123);
+    color: white;
+}
+.post-card .post-card-img img{
+    width: 300px;
+    border-radius: 20px;
+}
+.post-card-price{
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(255, 0, 123);
+    position: absolute;
+    top: -10px;
+    right: 20px;
+}
+
+.section-posts{
+    margin: 50px 0px;
+}
+.post-card-group{
+    margin: 30px 0px;
+}
+.post-like-img{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    scale: 1.2;
+    color: rgb(255, 0, 123);
+    background-color: rgba(255, 0, 123, 0.057);
+    padding: 5px;
+    border-radius: 50%;
+}
+.post-card-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.rating span{
+    color: rgb(255, 0, 123);
+}
+.rating{
+    scale: 0.95;
+}
+
+footer{
+    background-color: rgba(255, 181, 211, 0.208);
+    min-height: 100px;
+}
+
+.page-navigation button{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 123);
+    color: white;
+    transition: all 0.2s;
+}
+.page-navigation button:hover{
+    scale: 1.05;
+}
+
+/* cart section----------------------------------- */
+
+.cart-card{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    box-shadow: 0 0 100px rgba(255, 0, 123, 0.073);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+.cart-card img{
+    height: 150px;
+}
+
+.cart-card .cart-group-btn button{
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin: 0px 5px;
+    border: none;
+}
+.cart-card .cart-group-btn .btn-buy{
+    color: white;
+    background-color: rgb(255, 0, 123);
+}
+/* ------------------login---------------- */
+.auth-card{
+    width: 350px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.107);
+    padding: 20px 10px ;
+    display: flex;
+   align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    
+
+}
+
+.auth-card h2 {
+color: rgb(255, 0, 123);
+}
+
+.auth-card button{
+    border: none;
+    padding: 10px 30px;
+    background-color: rgb(255, 0, 123);
+    color: white;
+    border-radius: 20px;
+}
+.auth-card input{
+    outline: none;
+    border-radius: 10px;
+    height: 40px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.037);
+    width: 300px;
+    padding: 0px 10px 0px 40px;
+}
+.auth-input-logo{
+    position: relative;
+}
+.auth-input-logo span{
+    top: 6px;
+    left: 10px;
+    position: absolute;
+    /* opacity: 0.7; */
+    color: rgb(255, 0, 123);
+}
+.auth-card p{
+    font-size:15px;
+}
